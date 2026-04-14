@@ -8,12 +8,27 @@ namespace JogoDaVelha
         private bool _vezDoX = true;
         private int _jogadas = 0;
         private SoundPlayer _somClique = new SoundPlayer("escrita.wav");
+        private SoundPlayer _somVitoria = new SoundPlayer("receba.wav");
+
+        private void somLogica()
+        {
+
+            if (_vezDoX)
+            {
+                _somClique = new SoundPlayer("escrita.wav");
+            }
+            else
+            {
+                _somClique = new SoundPlayer("escrita2.wav");
+            };
+        }
 
         public frmJogoDaVelha()
         {
             InitializeComponent();
             pnlTelaInicial.BringToFront();
             _somClique.Load();
+            _somVitoria.Load();
         }
 
         private void BotaoGrid_Click(object sender, EventArgs e)
@@ -23,28 +38,38 @@ namespace JogoDaVelha
             if (botaoClicado.Text != "") return;
             botaoClicado.Text = _vezDoX ? "X" : "O";
             _jogadas++;
-            _somClique.Play();
 
             if (VerificarVencedor())
             {
                 string vencedor = _vezDoX ? "X" : "O";
-                MessageBox.Show($"Jogador {vencedor} venceu!", "Temos um Vencedor", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                lblTituloFinal.Text = $"O Jogador {vencedor} venceu!";
+                lblReceba.Text = "RECEBA!";
                 ZerarTabuleiro();
-                pnlTelaInicial.Visible = true;
+
+                pnlTelaFinal.BringToFront();
+                pnlTelaFinal.Visible = true;
+                _somVitoria.Play();
+
 
             }
             else if (_jogadas == 9)
             {
-                MessageBox.Show("Deu velha! O jogo empatou", "Empate", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                pnlTelaFinal.Visible = Enabled;
+                lblTituloFinal.Text = "Deu velha! O jogo empatou";
+                lblReceba.Text = "RECEBA...?";
+
                 ZerarTabuleiro();
-                pnlTelaInicial.Visible = true;
+                pnlTelaFinal.BringToFront();
+                pnlTelaFinal.Visible = true;
             }
             else
             {
                 _vezDoX = !_vezDoX;
                 lblVez.Text = $"Vez do jogador: {(_vezDoX ? "X" : "O")}";
+                somLogica();
+                _somClique.Play();
             }
-            
+
         }
 
         private bool VerificarVencedor()
@@ -91,6 +116,12 @@ namespace JogoDaVelha
             _vezDoX = true;
             _jogadas = 0;
             lblVez.Text = "Vez do jogador: X";
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            pnlTelaFinal.Visible = false;
+            pnlTelaInicial.Visible = true;
         }
     }
 }

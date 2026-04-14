@@ -44,15 +44,15 @@
             panel4 = new Panel();
             lblVez = new Label();
             pnlTelaInicial = new Panel();
-            pnlTelaFinal = new Panel();
             btnSair = new Button();
             btnJogar = new Button();
             lblTitulo = new Label();
-            fontDialog1 = new FontDialog();
-            lblTituloFinal = new Label();
+            pnlTelaFinal = new Panel();
+            btnVoltar = new Button();
             lblReceba = new Label();
+            lblTituloFinal = new Label();
+            fontDialog1 = new FontDialog();
             button1 = new Button();
-            button2 = new Button();
             pnlTelaInicial.SuspendLayout();
             pnlTelaFinal.SuspendLayout();
             SuspendLayout();
@@ -313,19 +313,6 @@
             pnlTelaInicial.Size = new Size(458, 592);
             pnlTelaInicial.TabIndex = 14;
             // 
-            // pnlTelaFinal
-            // 
-            pnlTelaFinal.BackgroundImage = Properties.Resources.fundo;
-            pnlTelaFinal.Controls.Add(button2);
-            pnlTelaFinal.Controls.Add(button1);
-            pnlTelaFinal.Controls.Add(lblReceba);
-            pnlTelaFinal.Controls.Add(lblTituloFinal);
-            pnlTelaFinal.Dock = DockStyle.Fill;
-            pnlTelaFinal.Location = new Point(0, 0);
-            pnlTelaFinal.Name = "pnlTelaFinal";
-            pnlTelaFinal.Size = new Size(458, 592);
-            pnlTelaFinal.TabIndex = 3;
-            // 
             // btnSair
             // 
             btnSair.BackColor = Color.FromArgb(64, 128, 128, 128);
@@ -363,7 +350,6 @@
             // lblTitulo
             // 
             lblTitulo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblTitulo.AutoSize = true;
             lblTitulo.BackColor = Color.Transparent;
             lblTitulo.FlatStyle = FlatStyle.Flat;
             lblTitulo.Font = new Font("Segoe Script", 26F, FontStyle.Bold);
@@ -371,60 +357,90 @@
             lblTitulo.Location = new Point(17, 79);
             lblTitulo.Margin = new Padding(5, 0, 5, 0);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(419, 87);
+            lblTitulo.Size = new Size(419, 57);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Jogo da Velha";
             lblTitulo.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblTituloFinal
+            // pnlTelaFinal
             // 
-            lblTituloFinal.AutoSize = true;
-            lblTituloFinal.BackColor = Color.Transparent;
-            lblTituloFinal.Font = new Font("Segoe Script", 20F);
-            lblTituloFinal.Location = new Point(91, 62);
-            lblTituloFinal.Name = "lblTituloFinal";
-            lblTituloFinal.Size = new Size(295, 64);
-            lblTituloFinal.TabIndex = 0;
-            lblTituloFinal.Text = "LoremIpsum";
+            pnlTelaFinal.BackgroundImage = Properties.Resources.fundo;
+            pnlTelaFinal.Controls.Add(btnVoltar);
+            pnlTelaFinal.Controls.Add(lblReceba);
+            pnlTelaFinal.Controls.Add(lblTituloFinal);
+            pnlTelaFinal.Dock = DockStyle.Fill;
+            pnlTelaFinal.Location = new Point(0, 0);
+            pnlTelaFinal.Name = "pnlTelaFinal";
+            pnlTelaFinal.Size = new Size(458, 592);
+            pnlTelaFinal.TabIndex = 3;
+            pnlTelaFinal.Visible = false;
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.BackColor = Color.FromArgb(64, 128, 128, 128);
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("MV Boli", 12F, FontStyle.Bold);
+            btnVoltar.ForeColor = Color.WhiteSmoke;
+            btnVoltar.Location = new Point(153, 251);
+            btnVoltar.Margin = new Padding(5);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(158, 59);
+            btnVoltar.TabIndex = 4;
+            btnVoltar.Text = "Voltar ao Menu";
+            btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // lblReceba
             // 
             lblReceba.AutoSize = true;
             lblReceba.BackColor = Color.Transparent;
             lblReceba.Font = new Font("Segoe Script", 20F);
-            lblReceba.Location = new Point(127, 139);
+            lblReceba.Location = new Point(168, 136);
             lblReceba.Name = "lblReceba";
-            lblReceba.Size = new Size(211, 64);
+            lblReceba.Size = new Size(143, 42);
             lblReceba.TabIndex = 1;
             lblReceba.Text = "RECEBA";
             // 
+            // lblTituloFinal
+            // 
+            lblTituloFinal.BackColor = Color.Transparent;
+            lblTituloFinal.Font = new Font("Segoe Script", 20F);
+            lblTituloFinal.Location = new Point(17, 59);
+            lblTituloFinal.Name = "lblTituloFinal";
+            lblTituloFinal.Size = new Size(423, 42);
+            lblTituloFinal.TabIndex = 0;
+            lblTituloFinal.Text = "LoremIpsum";
+            lblTituloFinal.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // button1
             // 
-            button1.Location = new Point(158, 264);
+            button1.BackColor = Color.FromArgb(32, 128, 128, 128);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("MV Boli", 9F, FontStyle.Bold);
+            button1.ForeColor = Color.Gray;
+            button1.Location = new Point(328, 7);
+            button1.Margin = new Padding(5);
             button1.Name = "button1";
-            button1.Size = new Size(153, 48);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(160, 331);
-            button2.Name = "button2";
-            button2.Size = new Size(153, 48);
-            button2.TabIndex = 3;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            button1.Size = new Size(123, 22);
+            button1.TabIndex = 15;
+            button1.Text = "Voltar ao Menu";
+            button1.UseCompatibleTextRendering = true;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += btnVoltar_Click;
             // 
             // frmJogoDaVelha
             // 
-            AutoScaleDimensions = new SizeF(15F, 37F);
+            AutoScaleDimensions = new SizeF(10F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.FromArgb(20, 20, 20);
             BackgroundImage = Properties.Resources.fundo;
             ClientSize = new Size(458, 592);
-            Controls.Add(pnlTelaFinal);
+            Controls.Add(button1);
             Controls.Add(lblVez);
             Controls.Add(panel4);
             Controls.Add(panel3);
@@ -440,17 +456,17 @@
             Controls.Add(btn3);
             Controls.Add(btn2);
             Controls.Add(btn1);
+            Controls.Add(pnlTelaFinal);
             Controls.Add(pnlTelaInicial);
             Font = new Font("Calibri", 15F);
             ForeColor = Color.Silver;
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(5);
             MaximizeBox = false;
             Name = "frmJogoDaVelha";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Jogo Da Velha";
             pnlTelaInicial.ResumeLayout(false);
-            pnlTelaInicial.PerformLayout();
             pnlTelaFinal.ResumeLayout(false);
             pnlTelaFinal.PerformLayout();
             ResumeLayout(false);
@@ -479,9 +495,9 @@
         private FontDialog fontDialog1;
         private Button btnSair;
         private Panel pnlTelaFinal;
-        private Button button1;
         private Label lblReceba;
         private Label lblTituloFinal;
-        private Button button2;
+        private Button btnVoltar;
+        private Button button1;
     }
 }
