@@ -38,26 +38,28 @@
             btn8 = new Button();
             btn7 = new Button();
             btnReiniciar = new Button();
-            panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
+            pnlCerquilha1 = new Panel();
+            pnlCerquilha2 = new Panel();
+            pnlCerquilha3 = new Panel();
+            pnlCerquilha4 = new Panel();
             lblVez = new Label();
             pnlTelaInicial = new Panel();
+            btnMinimizar = new Button();
             btnSair = new Button();
             btnJogar = new Button();
             lblTitulo = new Label();
+            btnVoltar2 = new Button();
             pnlTelaFinal = new Panel();
+            btnMinimizar3 = new Button();
             btnVoltar = new Button();
             lblReceba = new Label();
             lblTituloFinal = new Label();
             fontDialog1 = new FontDialog();
-            button1 = new Button();
-            btnMinimizar = new Button();
             btnMinimizar2 = new Button();
-            btnMinimizar3 = new Button();
+            pnlTelaJogo = new Panel();
             pnlTelaInicial.SuspendLayout();
             pnlTelaFinal.SuspendLayout();
+            pnlTelaJogo.SuspendLayout();
             SuspendLayout();
             // 
             // btn1
@@ -70,7 +72,7 @@
             btn1.FlatStyle = FlatStyle.Flat;
             btn1.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn1.ForeColor = Color.WhiteSmoke;
-            btn1.Location = new Point(17, 62);
+            btn1.Location = new Point(43, 73);
             btn1.Margin = new Padding(5);
             btn1.Name = "btn1";
             btn1.Size = new Size(133, 135);
@@ -89,7 +91,7 @@
             btn2.FlatStyle = FlatStyle.Flat;
             btn2.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn2.ForeColor = Color.WhiteSmoke;
-            btn2.Location = new Point(160, 62);
+            btn2.Location = new Point(186, 73);
             btn2.Margin = new Padding(5);
             btn2.Name = "btn2";
             btn2.Size = new Size(133, 135);
@@ -108,7 +110,7 @@
             btn3.FlatStyle = FlatStyle.Flat;
             btn3.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn3.ForeColor = Color.WhiteSmoke;
-            btn3.Location = new Point(303, 62);
+            btn3.Location = new Point(329, 73);
             btn3.Margin = new Padding(5);
             btn3.Name = "btn3";
             btn3.Size = new Size(133, 135);
@@ -127,7 +129,7 @@
             btn6.FlatStyle = FlatStyle.Flat;
             btn6.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn6.ForeColor = Color.WhiteSmoke;
-            btn6.Location = new Point(303, 207);
+            btn6.Location = new Point(329, 218);
             btn6.Margin = new Padding(5);
             btn6.Name = "btn6";
             btn6.Size = new Size(133, 135);
@@ -146,7 +148,7 @@
             btn5.FlatStyle = FlatStyle.Flat;
             btn5.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn5.ForeColor = Color.WhiteSmoke;
-            btn5.Location = new Point(160, 207);
+            btn5.Location = new Point(186, 218);
             btn5.Margin = new Padding(5);
             btn5.Name = "btn5";
             btn5.Size = new Size(133, 135);
@@ -165,7 +167,7 @@
             btn4.FlatStyle = FlatStyle.Flat;
             btn4.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn4.ForeColor = Color.WhiteSmoke;
-            btn4.Location = new Point(17, 207);
+            btn4.Location = new Point(43, 218);
             btn4.Margin = new Padding(5);
             btn4.Name = "btn4";
             btn4.Size = new Size(133, 135);
@@ -184,7 +186,7 @@
             btn9.FlatStyle = FlatStyle.Flat;
             btn9.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn9.ForeColor = Color.WhiteSmoke;
-            btn9.Location = new Point(303, 352);
+            btn9.Location = new Point(329, 363);
             btn9.Margin = new Padding(5);
             btn9.Name = "btn9";
             btn9.Size = new Size(133, 135);
@@ -203,7 +205,7 @@
             btn8.FlatStyle = FlatStyle.Flat;
             btn8.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn8.ForeColor = Color.WhiteSmoke;
-            btn8.Location = new Point(160, 352);
+            btn8.Location = new Point(186, 363);
             btn8.Margin = new Padding(5);
             btn8.Name = "btn8";
             btn8.Size = new Size(133, 135);
@@ -222,7 +224,7 @@
             btn7.FlatStyle = FlatStyle.Flat;
             btn7.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn7.ForeColor = Color.WhiteSmoke;
-            btn7.Location = new Point(17, 352);
+            btn7.Location = new Point(43, 363);
             btn7.Margin = new Padding(5);
             btn7.Name = "btn7";
             btn7.Size = new Size(133, 135);
@@ -238,7 +240,7 @@
             btnReiniciar.FlatStyle = FlatStyle.Flat;
             btnReiniciar.Font = new Font("MV Boli", 12F, FontStyle.Bold);
             btnReiniciar.ForeColor = Color.WhiteSmoke;
-            btnReiniciar.Location = new Point(13, 506);
+            btnReiniciar.Location = new Point(39, 517);
             btnReiniciar.Margin = new Padding(5);
             btnReiniciar.Name = "btnReiniciar";
             btnReiniciar.Size = new Size(427, 62);
@@ -248,52 +250,52 @@
             btnReiniciar.UseVisualStyleBackColor = false;
             btnReiniciar.Click += btnReiniciar_Click;
             // 
-            // panel1
+            // pnlCerquilha1
             // 
-            panel1.BackColor = Color.DarkGray;
-            panel1.Enabled = false;
-            panel1.Location = new Point(13, 200);
-            panel1.Margin = new Padding(5);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(427, 3);
-            panel1.TabIndex = 10;
+            pnlCerquilha1.BackColor = Color.DarkGray;
+            pnlCerquilha1.Enabled = false;
+            pnlCerquilha1.Location = new Point(39, 211);
+            pnlCerquilha1.Margin = new Padding(5);
+            pnlCerquilha1.Name = "pnlCerquilha1";
+            pnlCerquilha1.Size = new Size(427, 3);
+            pnlCerquilha1.TabIndex = 10;
             // 
-            // panel2
+            // pnlCerquilha2
             // 
-            panel2.BackColor = Color.DarkGray;
-            panel2.Enabled = false;
-            panel2.Location = new Point(13, 345);
-            panel2.Margin = new Padding(5);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(427, 3);
-            panel2.TabIndex = 11;
+            pnlCerquilha2.BackColor = Color.DarkGray;
+            pnlCerquilha2.Enabled = false;
+            pnlCerquilha2.Location = new Point(39, 356);
+            pnlCerquilha2.Margin = new Padding(5);
+            pnlCerquilha2.Name = "pnlCerquilha2";
+            pnlCerquilha2.Size = new Size(427, 3);
+            pnlCerquilha2.TabIndex = 11;
             // 
-            // panel3
+            // pnlCerquilha3
             // 
-            panel3.BackColor = Color.DarkGray;
-            panel3.Enabled = false;
-            panel3.Location = new Point(153, 59);
-            panel3.Margin = new Padding(5);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(3, 431);
-            panel3.TabIndex = 11;
+            pnlCerquilha3.BackColor = Color.DarkGray;
+            pnlCerquilha3.Enabled = false;
+            pnlCerquilha3.Location = new Point(179, 70);
+            pnlCerquilha3.Margin = new Padding(5);
+            pnlCerquilha3.Name = "pnlCerquilha3";
+            pnlCerquilha3.Size = new Size(3, 431);
+            pnlCerquilha3.TabIndex = 11;
             // 
-            // panel4
+            // pnlCerquilha4
             // 
-            panel4.BackColor = Color.DarkGray;
-            panel4.Enabled = false;
-            panel4.Location = new Point(297, 59);
-            panel4.Margin = new Padding(5);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(3, 431);
-            panel4.TabIndex = 12;
+            pnlCerquilha4.BackColor = Color.DarkGray;
+            pnlCerquilha4.Enabled = false;
+            pnlCerquilha4.Location = new Point(323, 70);
+            pnlCerquilha4.Margin = new Padding(5);
+            pnlCerquilha4.Name = "pnlCerquilha4";
+            pnlCerquilha4.Size = new Size(3, 431);
+            pnlCerquilha4.TabIndex = 12;
             // 
             // lblVez
             // 
             lblVez.BackColor = Color.Transparent;
             lblVez.Font = new Font("MV Boli", 15F, FontStyle.Bold);
             lblVez.ForeColor = Color.WhiteSmoke;
-            lblVez.Location = new Point(13, 5);
+            lblVez.Location = new Point(39, 16);
             lblVez.Margin = new Padding(5, 0, 5, 0);
             lblVez.Name = "lblVez";
             lblVez.Size = new Size(427, 52);
@@ -301,6 +303,7 @@
             lblVez.Text = "Vez do jogador: X";
             lblVez.TextAlign = ContentAlignment.MiddleCenter;
             lblVez.UseCompatibleTextRendering = true;
+            lblVez.Click += lblVez_Click;
             // 
             // pnlTelaInicial
             // 
@@ -314,8 +317,26 @@
             pnlTelaInicial.Location = new Point(0, 0);
             pnlTelaInicial.Margin = new Padding(5);
             pnlTelaInicial.Name = "pnlTelaInicial";
-            pnlTelaInicial.Size = new Size(458, 592);
+            pnlTelaInicial.Size = new Size(500, 600);
             pnlTelaInicial.TabIndex = 14;
+            // 
+            // btnMinimizar
+            // 
+            btnMinimizar.BackColor = Color.FromArgb(64, 128, 128, 128);
+            btnMinimizar.FlatAppearance.BorderSize = 0;
+            btnMinimizar.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
+            btnMinimizar.FlatStyle = FlatStyle.Flat;
+            btnMinimizar.Font = new Font("MV Boli", 12F, FontStyle.Bold);
+            btnMinimizar.ForeColor = Color.WhiteSmoke;
+            btnMinimizar.Location = new Point(27, 27);
+            btnMinimizar.Margin = new Padding(5);
+            btnMinimizar.Name = "btnMinimizar";
+            btnMinimizar.Size = new Size(43, 29);
+            btnMinimizar.TabIndex = 5;
+            btnMinimizar.Text = "_";
+            btnMinimizar.UseCompatibleTextRendering = true;
+            btnMinimizar.UseVisualStyleBackColor = false;
+            btnMinimizar.Click += btnMinimizar_Click;
             // 
             // btnSair
             // 
@@ -358,13 +379,31 @@
             lblTitulo.FlatStyle = FlatStyle.Flat;
             lblTitulo.Font = new Font("Segoe Script", 26F, FontStyle.Bold);
             lblTitulo.ForeColor = Color.WhiteSmoke;
-            lblTitulo.Location = new Point(17, 79);
+            lblTitulo.Location = new Point(20, 68);
             lblTitulo.Margin = new Padding(5, 0, 5, 0);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(419, 57);
+            lblTitulo.Size = new Size(461, 81);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Jogo da Velha";
             lblTitulo.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnVoltar2
+            // 
+            btnVoltar2.BackColor = Color.FromArgb(64, 128, 128, 128);
+            btnVoltar2.FlatAppearance.BorderSize = 0;
+            btnVoltar2.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
+            btnVoltar2.FlatStyle = FlatStyle.Flat;
+            btnVoltar2.Font = new Font("MV Boli", 9F, FontStyle.Bold);
+            btnVoltar2.ForeColor = Color.Silver;
+            btnVoltar2.Location = new Point(397, 20);
+            btnVoltar2.Margin = new Padding(5);
+            btnVoltar2.Name = "btnVoltar2";
+            btnVoltar2.Size = new Size(93, 29);
+            btnVoltar2.TabIndex = 15;
+            btnVoltar2.Text = "Voltar";
+            btnVoltar2.UseCompatibleTextRendering = true;
+            btnVoltar2.UseVisualStyleBackColor = false;
+            btnVoltar2.Click += btnVoltar_Click;
             // 
             // pnlTelaFinal
             // 
@@ -376,102 +415,9 @@
             pnlTelaFinal.Dock = DockStyle.Fill;
             pnlTelaFinal.Location = new Point(0, 0);
             pnlTelaFinal.Name = "pnlTelaFinal";
-            pnlTelaFinal.Size = new Size(458, 592);
+            pnlTelaFinal.Size = new Size(500, 600);
             pnlTelaFinal.TabIndex = 3;
             pnlTelaFinal.Visible = false;
-            // 
-            // btnVoltar
-            // 
-            btnVoltar.BackColor = Color.FromArgb(64, 128, 128, 128);
-            btnVoltar.FlatAppearance.BorderSize = 0;
-            btnVoltar.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
-            btnVoltar.FlatStyle = FlatStyle.Flat;
-            btnVoltar.Font = new Font("MV Boli", 12F, FontStyle.Bold);
-            btnVoltar.ForeColor = Color.WhiteSmoke;
-            btnVoltar.Location = new Point(153, 251);
-            btnVoltar.Margin = new Padding(5);
-            btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new Size(158, 59);
-            btnVoltar.TabIndex = 4;
-            btnVoltar.Text = "Voltar ao Menu";
-            btnVoltar.UseVisualStyleBackColor = false;
-            btnVoltar.Click += btnVoltar_Click;
-            // 
-            // lblReceba
-            // 
-            lblReceba.AutoSize = true;
-            lblReceba.BackColor = Color.Transparent;
-            lblReceba.Font = new Font("Segoe Script", 20F);
-            lblReceba.Location = new Point(168, 136);
-            lblReceba.Name = "lblReceba";
-            lblReceba.Size = new Size(143, 42);
-            lblReceba.TabIndex = 1;
-            lblReceba.Text = "RECEBA";
-            // 
-            // lblTituloFinal
-            // 
-            lblTituloFinal.BackColor = Color.Transparent;
-            lblTituloFinal.Font = new Font("Segoe Script", 20F);
-            lblTituloFinal.Location = new Point(17, 59);
-            lblTituloFinal.Name = "lblTituloFinal";
-            lblTituloFinal.Size = new Size(423, 42);
-            lblTituloFinal.TabIndex = 0;
-            lblTituloFinal.Text = "LoremIpsum";
-            lblTituloFinal.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(32, 128, 128, 128);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("MV Boli", 9F, FontStyle.Bold);
-            button1.ForeColor = Color.Gray;
-            button1.Location = new Point(328, 7);
-            button1.Margin = new Padding(5);
-            button1.Name = "button1";
-            button1.Size = new Size(123, 22);
-            button1.TabIndex = 15;
-            button1.Text = "Voltar ao Menu";
-            button1.UseCompatibleTextRendering = true;
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += btnVoltar_Click;
-            // 
-            // btnMinimizar
-            // 
-            btnMinimizar.BackColor = Color.FromArgb(64, 128, 128, 128);
-            btnMinimizar.FlatAppearance.BorderSize = 0;
-            btnMinimizar.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
-            btnMinimizar.FlatStyle = FlatStyle.Flat;
-            btnMinimizar.Font = new Font("MV Boli", 12F, FontStyle.Bold);
-            btnMinimizar.ForeColor = Color.WhiteSmoke;
-            btnMinimizar.Location = new Point(27, 27);
-            btnMinimizar.Margin = new Padding(5);
-            btnMinimizar.Name = "btnMinimizar";
-            btnMinimizar.Size = new Size(36, 22);
-            btnMinimizar.TabIndex = 3;
-            btnMinimizar.Text = "_";
-            btnMinimizar.UseCompatibleTextRendering = true;
-            btnMinimizar.UseVisualStyleBackColor = false;
-            btnMinimizar.Click += btnMinimizar_Click;
-            // 
-            // btnMinimizar2
-            // 
-            btnMinimizar2.BackColor = Color.FromArgb(64, 128, 128, 128);
-            btnMinimizar2.FlatAppearance.BorderSize = 0;
-            btnMinimizar2.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
-            btnMinimizar2.FlatStyle = FlatStyle.Flat;
-            btnMinimizar2.Font = new Font("MV Boli", 12F, FontStyle.Bold);
-            btnMinimizar2.ForeColor = Color.WhiteSmoke;
-            btnMinimizar2.Location = new Point(27, 27);
-            btnMinimizar2.Margin = new Padding(5);
-            btnMinimizar2.Name = "btnMinimizar2";
-            btnMinimizar2.Size = new Size(36, 22);
-            btnMinimizar2.TabIndex = 4;
-            btnMinimizar2.Text = "_";
-            btnMinimizar2.UseCompatibleTextRendering = true;
-            btnMinimizar2.UseVisualStyleBackColor = false;
-            btnMinimizar2.Click += btnMinimizar_Click;
             // 
             // btnMinimizar3
             // 
@@ -481,43 +427,110 @@
             btnMinimizar3.FlatStyle = FlatStyle.Flat;
             btnMinimizar3.Font = new Font("MV Boli", 12F, FontStyle.Bold);
             btnMinimizar3.ForeColor = Color.WhiteSmoke;
-            btnMinimizar3.Location = new Point(27, 27);
+            btnMinimizar3.Location = new Point(27, 24);
             btnMinimizar3.Margin = new Padding(5);
             btnMinimizar3.Name = "btnMinimizar3";
-            btnMinimizar3.Size = new Size(36, 22);
-            btnMinimizar3.TabIndex = 5;
+            btnMinimizar3.Size = new Size(43, 29);
+            btnMinimizar3.TabIndex = 6;
             btnMinimizar3.Text = "_";
             btnMinimizar3.UseCompatibleTextRendering = true;
             btnMinimizar3.UseVisualStyleBackColor = false;
             btnMinimizar3.Click += btnMinimizar_Click;
             // 
+            // btnVoltar
+            // 
+            btnVoltar.BackColor = Color.FromArgb(64, 128, 128, 128);
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("MV Boli", 12F, FontStyle.Bold);
+            btnVoltar.ForeColor = Color.WhiteSmoke;
+            btnVoltar.Location = new Point(136, 279);
+            btnVoltar.Margin = new Padding(5);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(230, 53);
+            btnVoltar.TabIndex = 4;
+            btnVoltar.Text = "Voltar ao Menu";
+            btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
+            // lblReceba
+            // 
+            lblReceba.BackColor = Color.Transparent;
+            lblReceba.Font = new Font("Segoe Script", 20F);
+            lblReceba.Location = new Point(43, 151);
+            lblReceba.Name = "lblReceba";
+            lblReceba.Size = new Size(419, 64);
+            lblReceba.TabIndex = 1;
+            lblReceba.Text = "RECEBA";
+            lblReceba.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblTituloFinal
+            // 
+            lblTituloFinal.BackColor = Color.Transparent;
+            lblTituloFinal.Font = new Font("Segoe Script", 15F);
+            lblTituloFinal.Location = new Point(17, 59);
+            lblTituloFinal.Name = "lblTituloFinal";
+            lblTituloFinal.Size = new Size(464, 90);
+            lblTituloFinal.TabIndex = 0;
+            lblTituloFinal.Text = "LoremIpsum";
+            lblTituloFinal.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnMinimizar2
+            // 
+            btnMinimizar2.BackColor = Color.FromArgb(64, 128, 128, 128);
+            btnMinimizar2.FlatAppearance.BorderSize = 0;
+            btnMinimizar2.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
+            btnMinimizar2.FlatStyle = FlatStyle.Flat;
+            btnMinimizar2.Font = new Font("MV Boli", 12F, FontStyle.Bold);
+            btnMinimizar2.ForeColor = Color.Silver;
+            btnMinimizar2.Location = new Point(20, 20);
+            btnMinimizar2.Margin = new Padding(5);
+            btnMinimizar2.Name = "btnMinimizar2";
+            btnMinimizar2.Size = new Size(43, 29);
+            btnMinimizar2.TabIndex = 4;
+            btnMinimizar2.Text = "_";
+            btnMinimizar2.UseCompatibleTextRendering = true;
+            btnMinimizar2.UseVisualStyleBackColor = false;
+            btnMinimizar2.Click += btnMinimizar_Click;
+            // 
+            // pnlTelaJogo
+            // 
+            pnlTelaJogo.BackgroundImage = Properties.Resources.fundo;
+            pnlTelaJogo.Controls.Add(btnMinimizar2);
+            pnlTelaJogo.Controls.Add(btnVoltar2);
+            pnlTelaJogo.Controls.Add(lblVez);
+            pnlTelaJogo.Controls.Add(pnlCerquilha4);
+            pnlTelaJogo.Controls.Add(pnlCerquilha3);
+            pnlTelaJogo.Controls.Add(pnlCerquilha2);
+            pnlTelaJogo.Controls.Add(pnlCerquilha1);
+            pnlTelaJogo.Controls.Add(btnReiniciar);
+            pnlTelaJogo.Controls.Add(btn9);
+            pnlTelaJogo.Controls.Add(btn8);
+            pnlTelaJogo.Controls.Add(btn7);
+            pnlTelaJogo.Controls.Add(btn6);
+            pnlTelaJogo.Controls.Add(btn5);
+            pnlTelaJogo.Controls.Add(btn4);
+            pnlTelaJogo.Controls.Add(btn3);
+            pnlTelaJogo.Controls.Add(btn2);
+            pnlTelaJogo.Controls.Add(btn1);
+            pnlTelaJogo.Dock = DockStyle.Fill;
+            pnlTelaJogo.Location = new Point(0, 0);
+            pnlTelaJogo.Name = "pnlTelaJogo";
+            pnlTelaJogo.Size = new Size(500, 600);
+            pnlTelaJogo.TabIndex = 4;
+            // 
             // frmJogoDaVelha
             // 
-            AutoScaleDimensions = new SizeF(10F, 24F);
+            AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.FromArgb(20, 20, 20);
             BackgroundImage = Properties.Resources.fundo;
-            ClientSize = new Size(458, 592);
-            Controls.Add(pnlTelaFinal);
-            Controls.Add(btnMinimizar2);
-            Controls.Add(button1);
-            Controls.Add(lblVez);
-            Controls.Add(panel4);
-            Controls.Add(panel3);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            Controls.Add(btnReiniciar);
-            Controls.Add(btn9);
-            Controls.Add(btn8);
-            Controls.Add(btn7);
-            Controls.Add(btn6);
-            Controls.Add(btn5);
-            Controls.Add(btn4);
-            Controls.Add(btn3);
-            Controls.Add(btn2);
-            Controls.Add(btn1);
+            ClientSize = new Size(500, 600);
+            Controls.Add(pnlTelaJogo);
             Controls.Add(pnlTelaInicial);
+            Controls.Add(pnlTelaFinal);
             Font = new Font("Calibri", 15F);
             ForeColor = Color.Silver;
             FormBorderStyle = FormBorderStyle.None;
@@ -528,7 +541,7 @@
             Text = "Jogo Da Velha";
             pnlTelaInicial.ResumeLayout(false);
             pnlTelaFinal.ResumeLayout(false);
-            pnlTelaFinal.PerformLayout();
+            pnlTelaJogo.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -544,10 +557,10 @@
         private Button btn8;
         private Button btn7;
         private Button btnReiniciar;
-        private Panel panel1;
-        private Panel panel2;
-        private Panel panel3;
-        private Panel panel4;
+        private Panel pnlCerquilha1;
+        private Panel pnlCerquilha2;
+        private Panel pnlCerquilha3;
+        private Panel pnlCerquilha4;
         private Label lblVez;
         private Panel pnlTelaInicial;
         private Label lblTitulo;
@@ -558,9 +571,10 @@
         private Label lblReceba;
         private Label lblTituloFinal;
         private Button btnVoltar;
-        private Button button1;
-        private Button btnMinimizar;
+        private Button btnVoltar2;
         private Button btnMinimizar2;
+        private Panel pnlTelaJogo;
+        private Button btnMinimizar;
         private Button btnMinimizar3;
     }
 }

@@ -129,5 +129,10 @@ namespace JogoDaVelha
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void lblVez_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
