@@ -53,6 +53,9 @@
             lblTituloFinal = new Label();
             fontDialog1 = new FontDialog();
             button1 = new Button();
+            btnMinimizar = new Button();
+            btnMinimizar2 = new Button();
+            btnMinimizar3 = new Button();
             pnlTelaInicial.SuspendLayout();
             pnlTelaFinal.SuspendLayout();
             SuspendLayout();
@@ -303,6 +306,7 @@
             // 
             pnlTelaInicial.BackColor = Color.Transparent;
             pnlTelaInicial.BackgroundImage = Properties.Resources.fundo;
+            pnlTelaInicial.Controls.Add(btnMinimizar);
             pnlTelaInicial.Controls.Add(btnSair);
             pnlTelaInicial.Controls.Add(btnJogar);
             pnlTelaInicial.Controls.Add(lblTitulo);
@@ -365,6 +369,7 @@
             // pnlTelaFinal
             // 
             pnlTelaFinal.BackgroundImage = Properties.Resources.fundo;
+            pnlTelaFinal.Controls.Add(btnMinimizar3);
             pnlTelaFinal.Controls.Add(btnVoltar);
             pnlTelaFinal.Controls.Add(lblReceba);
             pnlTelaFinal.Controls.Add(lblTituloFinal);
@@ -432,6 +437,60 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += btnVoltar_Click;
             // 
+            // btnMinimizar
+            // 
+            btnMinimizar.BackColor = Color.FromArgb(64, 128, 128, 128);
+            btnMinimizar.FlatAppearance.BorderSize = 0;
+            btnMinimizar.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
+            btnMinimizar.FlatStyle = FlatStyle.Flat;
+            btnMinimizar.Font = new Font("MV Boli", 12F, FontStyle.Bold);
+            btnMinimizar.ForeColor = Color.WhiteSmoke;
+            btnMinimizar.Location = new Point(27, 27);
+            btnMinimizar.Margin = new Padding(5);
+            btnMinimizar.Name = "btnMinimizar";
+            btnMinimizar.Size = new Size(36, 22);
+            btnMinimizar.TabIndex = 3;
+            btnMinimizar.Text = "_";
+            btnMinimizar.UseCompatibleTextRendering = true;
+            btnMinimizar.UseVisualStyleBackColor = false;
+            btnMinimizar.Click += btnMinimizar_Click;
+            // 
+            // btnMinimizar2
+            // 
+            btnMinimizar2.BackColor = Color.FromArgb(64, 128, 128, 128);
+            btnMinimizar2.FlatAppearance.BorderSize = 0;
+            btnMinimizar2.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
+            btnMinimizar2.FlatStyle = FlatStyle.Flat;
+            btnMinimizar2.Font = new Font("MV Boli", 12F, FontStyle.Bold);
+            btnMinimizar2.ForeColor = Color.WhiteSmoke;
+            btnMinimizar2.Location = new Point(27, 27);
+            btnMinimizar2.Margin = new Padding(5);
+            btnMinimizar2.Name = "btnMinimizar2";
+            btnMinimizar2.Size = new Size(36, 22);
+            btnMinimizar2.TabIndex = 4;
+            btnMinimizar2.Text = "_";
+            btnMinimizar2.UseCompatibleTextRendering = true;
+            btnMinimizar2.UseVisualStyleBackColor = false;
+            btnMinimizar2.Click += btnMinimizar_Click;
+            // 
+            // btnMinimizar3
+            // 
+            btnMinimizar3.BackColor = Color.FromArgb(64, 128, 128, 128);
+            btnMinimizar3.FlatAppearance.BorderSize = 0;
+            btnMinimizar3.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
+            btnMinimizar3.FlatStyle = FlatStyle.Flat;
+            btnMinimizar3.Font = new Font("MV Boli", 12F, FontStyle.Bold);
+            btnMinimizar3.ForeColor = Color.WhiteSmoke;
+            btnMinimizar3.Location = new Point(27, 27);
+            btnMinimizar3.Margin = new Padding(5);
+            btnMinimizar3.Name = "btnMinimizar3";
+            btnMinimizar3.Size = new Size(36, 22);
+            btnMinimizar3.TabIndex = 5;
+            btnMinimizar3.Text = "_";
+            btnMinimizar3.UseCompatibleTextRendering = true;
+            btnMinimizar3.UseVisualStyleBackColor = false;
+            btnMinimizar3.Click += btnMinimizar_Click;
+            // 
             // frmJogoDaVelha
             // 
             AutoScaleDimensions = new SizeF(10F, 24F);
@@ -440,6 +499,8 @@
             BackColor = Color.FromArgb(20, 20, 20);
             BackgroundImage = Properties.Resources.fundo;
             ClientSize = new Size(458, 592);
+            Controls.Add(pnlTelaFinal);
+            Controls.Add(btnMinimizar2);
             Controls.Add(button1);
             Controls.Add(lblVez);
             Controls.Add(panel4);
@@ -456,7 +517,6 @@
             Controls.Add(btn3);
             Controls.Add(btn2);
             Controls.Add(btn1);
-            Controls.Add(pnlTelaFinal);
             Controls.Add(pnlTelaInicial);
             Font = new Font("Calibri", 15F);
             ForeColor = Color.Silver;
@@ -499,5 +559,8 @@
         private Label lblTituloFinal;
         private Button btnVoltar;
         private Button button1;
+        private Button btnMinimizar;
+        private Button btnMinimizar2;
+        private Button btnMinimizar3;
     }
 }

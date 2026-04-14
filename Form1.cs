@@ -20,7 +20,8 @@ namespace JogoDaVelha
             else
             {
                 _somClique = new SoundPlayer("escrita2.wav");
-            };
+            }
+            ;
         }
 
         public frmJogoDaVelha()
@@ -122,6 +123,11 @@ namespace JogoDaVelha
         {
             pnlTelaFinal.Visible = false;
             pnlTelaInicial.Visible = true;
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }
