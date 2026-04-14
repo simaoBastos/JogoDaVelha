@@ -44,7 +44,7 @@
             pnlCerquilha4 = new Panel();
             lblVez = new Label();
             pnlTelaInicial = new Panel();
-            btnMinimizar = new Button();
+            btnMinimizar1 = new Button();
             btnSair = new Button();
             btnJogar = new Button();
             lblTitulo = new Label();
@@ -309,7 +309,7 @@
             // 
             pnlTelaInicial.BackColor = Color.Transparent;
             pnlTelaInicial.BackgroundImage = Properties.Resources.fundo;
-            pnlTelaInicial.Controls.Add(btnMinimizar);
+            pnlTelaInicial.Controls.Add(btnMinimizar1);
             pnlTelaInicial.Controls.Add(btnSair);
             pnlTelaInicial.Controls.Add(btnJogar);
             pnlTelaInicial.Controls.Add(lblTitulo);
@@ -320,23 +320,23 @@
             pnlTelaInicial.Size = new Size(500, 600);
             pnlTelaInicial.TabIndex = 14;
             // 
-            // btnMinimizar
+            // btnMinimizar1
             // 
-            btnMinimizar.BackColor = Color.FromArgb(64, 128, 128, 128);
-            btnMinimizar.FlatAppearance.BorderSize = 0;
-            btnMinimizar.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
-            btnMinimizar.FlatStyle = FlatStyle.Flat;
-            btnMinimizar.Font = new Font("MV Boli", 12F, FontStyle.Bold);
-            btnMinimizar.ForeColor = Color.WhiteSmoke;
-            btnMinimizar.Location = new Point(27, 27);
-            btnMinimizar.Margin = new Padding(5);
-            btnMinimizar.Name = "btnMinimizar";
-            btnMinimizar.Size = new Size(43, 29);
-            btnMinimizar.TabIndex = 5;
-            btnMinimizar.Text = "_";
-            btnMinimizar.UseCompatibleTextRendering = true;
-            btnMinimizar.UseVisualStyleBackColor = false;
-            btnMinimizar.Click += btnMinimizar_Click;
+            btnMinimizar1.BackColor = Color.FromArgb(64, 128, 128, 128);
+            btnMinimizar1.FlatAppearance.BorderSize = 0;
+            btnMinimizar1.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
+            btnMinimizar1.FlatStyle = FlatStyle.Flat;
+            btnMinimizar1.Font = new Font("MV Boli", 12F, FontStyle.Bold);
+            btnMinimizar1.ForeColor = Color.Silver;
+            btnMinimizar1.Location = new Point(20, 20);
+            btnMinimizar1.Margin = new Padding(5);
+            btnMinimizar1.Name = "btnMinimizar1";
+            btnMinimizar1.Size = new Size(43, 29);
+            btnMinimizar1.TabIndex = 5;
+            btnMinimizar1.Text = "_";
+            btnMinimizar1.UseCompatibleTextRendering = true;
+            btnMinimizar1.UseVisualStyleBackColor = false;
+            btnMinimizar1.Click += btnMinimizar_Click;
             // 
             // btnSair
             // 
@@ -426,12 +426,12 @@
             btnMinimizar3.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 128, 128);
             btnMinimizar3.FlatStyle = FlatStyle.Flat;
             btnMinimizar3.Font = new Font("MV Boli", 12F, FontStyle.Bold);
-            btnMinimizar3.ForeColor = Color.WhiteSmoke;
-            btnMinimizar3.Location = new Point(27, 24);
+            btnMinimizar3.ForeColor = Color.Silver;
+            btnMinimizar3.Location = new Point(20, 20);
             btnMinimizar3.Margin = new Padding(5);
             btnMinimizar3.Name = "btnMinimizar3";
             btnMinimizar3.Size = new Size(43, 29);
-            btnMinimizar3.TabIndex = 6;
+            btnMinimizar3.TabIndex = 5;
             btnMinimizar3.Text = "_";
             btnMinimizar3.UseCompatibleTextRendering = true;
             btnMinimizar3.UseVisualStyleBackColor = false;
@@ -499,7 +499,6 @@
             pnlTelaJogo.BackgroundImage = Properties.Resources.fundo;
             pnlTelaJogo.Controls.Add(btnMinimizar2);
             pnlTelaJogo.Controls.Add(btnVoltar2);
-            pnlTelaJogo.Controls.Add(lblVez);
             pnlTelaJogo.Controls.Add(pnlCerquilha4);
             pnlTelaJogo.Controls.Add(pnlCerquilha3);
             pnlTelaJogo.Controls.Add(pnlCerquilha2);
@@ -514,6 +513,7 @@
             pnlTelaJogo.Controls.Add(btn3);
             pnlTelaJogo.Controls.Add(btn2);
             pnlTelaJogo.Controls.Add(btn1);
+            pnlTelaJogo.Controls.Add(lblVez);
             pnlTelaJogo.Dock = DockStyle.Fill;
             pnlTelaJogo.Location = new Point(0, 0);
             pnlTelaJogo.Name = "pnlTelaJogo";
@@ -574,7 +574,7 @@
         private Button btnVoltar2;
         private Button btnMinimizar2;
         private Panel pnlTelaJogo;
-        private Button btnMinimizar;
+        private Button btnMinimizar1;
         private Button btnMinimizar3;
     }
 }
