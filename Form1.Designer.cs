@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJogoDaVelha));
             btn1 = new Button();
             btn2 = new Button();
             btn3 = new Button();
@@ -534,6 +535,7 @@
             Font = new Font("Calibri", 15F);
             ForeColor = Color.Silver;
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(5);
             MaximizeBox = false;
             Name = "frmJogoDaVelha";
