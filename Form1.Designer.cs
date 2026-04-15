@@ -73,7 +73,7 @@
             btn1.FlatStyle = FlatStyle.Flat;
             btn1.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn1.ForeColor = Color.WhiteSmoke;
-            btn1.Location = new Point(43, 73);
+            btn1.Location = new Point(40, 73);
             btn1.Margin = new Padding(5);
             btn1.Name = "btn1";
             btn1.Size = new Size(133, 135);
@@ -92,7 +92,7 @@
             btn2.FlatStyle = FlatStyle.Flat;
             btn2.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn2.ForeColor = Color.WhiteSmoke;
-            btn2.Location = new Point(186, 73);
+            btn2.Location = new Point(183, 73);
             btn2.Margin = new Padding(5);
             btn2.Name = "btn2";
             btn2.Size = new Size(133, 135);
@@ -111,7 +111,7 @@
             btn3.FlatStyle = FlatStyle.Flat;
             btn3.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn3.ForeColor = Color.WhiteSmoke;
-            btn3.Location = new Point(329, 73);
+            btn3.Location = new Point(326, 73);
             btn3.Margin = new Padding(5);
             btn3.Name = "btn3";
             btn3.Size = new Size(133, 135);
@@ -130,7 +130,7 @@
             btn6.FlatStyle = FlatStyle.Flat;
             btn6.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn6.ForeColor = Color.WhiteSmoke;
-            btn6.Location = new Point(329, 218);
+            btn6.Location = new Point(326, 218);
             btn6.Margin = new Padding(5);
             btn6.Name = "btn6";
             btn6.Size = new Size(133, 135);
@@ -149,7 +149,7 @@
             btn5.FlatStyle = FlatStyle.Flat;
             btn5.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn5.ForeColor = Color.WhiteSmoke;
-            btn5.Location = new Point(186, 218);
+            btn5.Location = new Point(183, 218);
             btn5.Margin = new Padding(5);
             btn5.Name = "btn5";
             btn5.Size = new Size(133, 135);
@@ -168,7 +168,7 @@
             btn4.FlatStyle = FlatStyle.Flat;
             btn4.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn4.ForeColor = Color.WhiteSmoke;
-            btn4.Location = new Point(43, 218);
+            btn4.Location = new Point(40, 218);
             btn4.Margin = new Padding(5);
             btn4.Name = "btn4";
             btn4.Size = new Size(133, 135);
@@ -187,7 +187,7 @@
             btn9.FlatStyle = FlatStyle.Flat;
             btn9.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn9.ForeColor = Color.WhiteSmoke;
-            btn9.Location = new Point(329, 363);
+            btn9.Location = new Point(326, 363);
             btn9.Margin = new Padding(5);
             btn9.Name = "btn9";
             btn9.Size = new Size(133, 135);
@@ -206,7 +206,7 @@
             btn8.FlatStyle = FlatStyle.Flat;
             btn8.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn8.ForeColor = Color.WhiteSmoke;
-            btn8.Location = new Point(186, 363);
+            btn8.Location = new Point(183, 363);
             btn8.Margin = new Padding(5);
             btn8.Name = "btn8";
             btn8.Size = new Size(133, 135);
@@ -225,7 +225,7 @@
             btn7.FlatStyle = FlatStyle.Flat;
             btn7.Font = new Font("MV Boli", 40F, FontStyle.Bold);
             btn7.ForeColor = Color.WhiteSmoke;
-            btn7.Location = new Point(43, 363);
+            btn7.Location = new Point(40, 363);
             btn7.Margin = new Padding(5);
             btn7.Name = "btn7";
             btn7.Size = new Size(133, 135);
@@ -241,7 +241,7 @@
             btnReiniciar.FlatStyle = FlatStyle.Flat;
             btnReiniciar.Font = new Font("MV Boli", 12F, FontStyle.Bold);
             btnReiniciar.ForeColor = Color.WhiteSmoke;
-            btnReiniciar.Location = new Point(39, 517);
+            btnReiniciar.Location = new Point(36, 517);
             btnReiniciar.Margin = new Padding(5);
             btnReiniciar.Name = "btnReiniciar";
             btnReiniciar.Size = new Size(427, 62);
@@ -255,7 +255,7 @@
             // 
             pnlCerquilha1.BackColor = Color.DarkGray;
             pnlCerquilha1.Enabled = false;
-            pnlCerquilha1.Location = new Point(39, 211);
+            pnlCerquilha1.Location = new Point(36, 211);
             pnlCerquilha1.Margin = new Padding(5);
             pnlCerquilha1.Name = "pnlCerquilha1";
             pnlCerquilha1.Size = new Size(427, 3);
@@ -265,7 +265,7 @@
             // 
             pnlCerquilha2.BackColor = Color.DarkGray;
             pnlCerquilha2.Enabled = false;
-            pnlCerquilha2.Location = new Point(39, 356);
+            pnlCerquilha2.Location = new Point(36, 356);
             pnlCerquilha2.Margin = new Padding(5);
             pnlCerquilha2.Name = "pnlCerquilha2";
             pnlCerquilha2.Size = new Size(427, 3);
@@ -275,7 +275,7 @@
             // 
             pnlCerquilha3.BackColor = Color.DarkGray;
             pnlCerquilha3.Enabled = false;
-            pnlCerquilha3.Location = new Point(179, 70);
+            pnlCerquilha3.Location = new Point(176, 70);
             pnlCerquilha3.Margin = new Padding(5);
             pnlCerquilha3.Name = "pnlCerquilha3";
             pnlCerquilha3.Size = new Size(3, 431);
@@ -285,7 +285,7 @@
             // 
             pnlCerquilha4.BackColor = Color.DarkGray;
             pnlCerquilha4.Enabled = false;
-            pnlCerquilha4.Location = new Point(323, 70);
+            pnlCerquilha4.Location = new Point(320, 70);
             pnlCerquilha4.Margin = new Padding(5);
             pnlCerquilha4.Name = "pnlCerquilha4";
             pnlCerquilha4.Size = new Size(3, 431);
@@ -329,7 +329,7 @@
             btnMinimizar1.FlatStyle = FlatStyle.Flat;
             btnMinimizar1.Font = new Font("MV Boli", 12F, FontStyle.Bold);
             btnMinimizar1.ForeColor = Color.Silver;
-            btnMinimizar1.Location = new Point(20, 20);
+            btnMinimizar1.Location = new Point(15, 5);
             btnMinimizar1.Margin = new Padding(5);
             btnMinimizar1.Name = "btnMinimizar1";
             btnMinimizar1.Size = new Size(43, 29);
@@ -347,7 +347,7 @@
             btnSair.FlatStyle = FlatStyle.Flat;
             btnSair.Font = new Font("MV Boli", 12F, FontStyle.Bold);
             btnSair.ForeColor = Color.WhiteSmoke;
-            btnSair.Location = new Point(153, 320);
+            btnSair.Location = new Point(171, 320);
             btnSair.Margin = new Padding(5);
             btnSair.Name = "btnSair";
             btnSair.Size = new Size(158, 59);
@@ -364,7 +364,7 @@
             btnJogar.FlatStyle = FlatStyle.Flat;
             btnJogar.Font = new Font("MV Boli", 12F, FontStyle.Bold);
             btnJogar.ForeColor = Color.WhiteSmoke;
-            btnJogar.Location = new Point(153, 251);
+            btnJogar.Location = new Point(171, 250);
             btnJogar.Margin = new Padding(5);
             btnJogar.Name = "btnJogar";
             btnJogar.Size = new Size(158, 59);
@@ -380,7 +380,7 @@
             lblTitulo.FlatStyle = FlatStyle.Flat;
             lblTitulo.Font = new Font("Segoe Script", 26F, FontStyle.Bold);
             lblTitulo.ForeColor = Color.WhiteSmoke;
-            lblTitulo.Location = new Point(20, 68);
+            lblTitulo.Location = new Point(20, 70);
             lblTitulo.Margin = new Padding(5, 0, 5, 0);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(461, 81);
@@ -396,7 +396,7 @@
             btnVoltar2.FlatStyle = FlatStyle.Flat;
             btnVoltar2.Font = new Font("MV Boli", 9F, FontStyle.Bold);
             btnVoltar2.ForeColor = Color.Silver;
-            btnVoltar2.Location = new Point(397, 20);
+            btnVoltar2.Location = new Point(395, 5);
             btnVoltar2.Margin = new Padding(5);
             btnVoltar2.Name = "btnVoltar2";
             btnVoltar2.Size = new Size(93, 29);
@@ -428,7 +428,7 @@
             btnMinimizar3.FlatStyle = FlatStyle.Flat;
             btnMinimizar3.Font = new Font("MV Boli", 12F, FontStyle.Bold);
             btnMinimizar3.ForeColor = Color.Silver;
-            btnMinimizar3.Location = new Point(20, 20);
+            btnMinimizar3.Location = new Point(15, 5);
             btnMinimizar3.Margin = new Padding(5);
             btnMinimizar3.Name = "btnMinimizar3";
             btnMinimizar3.Size = new Size(43, 29);
@@ -446,7 +446,7 @@
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("MV Boli", 12F, FontStyle.Bold);
             btnVoltar.ForeColor = Color.WhiteSmoke;
-            btnVoltar.Location = new Point(136, 279);
+            btnVoltar.Location = new Point(135, 279);
             btnVoltar.Margin = new Padding(5);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(230, 53);
@@ -485,7 +485,7 @@
             btnMinimizar2.FlatStyle = FlatStyle.Flat;
             btnMinimizar2.Font = new Font("MV Boli", 12F, FontStyle.Bold);
             btnMinimizar2.ForeColor = Color.Silver;
-            btnMinimizar2.Location = new Point(20, 20);
+            btnMinimizar2.Location = new Point(15, 5);
             btnMinimizar2.Margin = new Padding(5);
             btnMinimizar2.Name = "btnMinimizar2";
             btnMinimizar2.Size = new Size(43, 29);
