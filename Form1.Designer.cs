@@ -293,13 +293,14 @@
             // 
             // lblVez
             // 
+            lblVez.AutoSize = true;
             lblVez.BackColor = Color.Transparent;
             lblVez.Font = new Font("MV Boli", 15F, FontStyle.Bold);
             lblVez.ForeColor = Color.WhiteSmoke;
-            lblVez.Location = new Point(39, 16);
+            lblVez.Location = new Point(109, 16);
             lblVez.Margin = new Padding(5, 0, 5, 0);
             lblVez.Name = "lblVez";
-            lblVez.Size = new Size(427, 52);
+            lblVez.Size = new Size(282, 56);
             lblVez.TabIndex = 13;
             lblVez.Text = "Vez do jogador: X";
             lblVez.TextAlign = ContentAlignment.MiddleCenter;
@@ -544,6 +545,7 @@
             pnlTelaInicial.ResumeLayout(false);
             pnlTelaFinal.ResumeLayout(false);
             pnlTelaJogo.ResumeLayout(false);
+            pnlTelaJogo.PerformLayout();
             ResumeLayout(false);
         }
 
